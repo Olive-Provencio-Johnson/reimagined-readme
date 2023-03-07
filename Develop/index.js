@@ -1,5 +1,6 @@
 // TODO: Include packages needed for this application
 // ran npm init and npm i inquirer@8.2.4
+const inquirer = require("inquirer");
 
 
 // TODO: Create an array of questions for user input
@@ -40,8 +41,8 @@ const questions = [
 
     },
     {
-        type: "input", 
-        message: "The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/)",
+        type: "list", 
+        message: "What type of license do you need? If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/)",
         name: "license",
 
     },
