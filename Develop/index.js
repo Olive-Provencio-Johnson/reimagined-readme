@@ -1,4 +1,6 @@
 // TODO: Include packages needed for this application
+// ran npm init and npm i inquirer@8.2.4
+
 
 // TODO: Create an array of questions for user input
 const questions = [];
