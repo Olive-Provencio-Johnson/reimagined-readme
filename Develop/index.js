@@ -1,6 +1,8 @@
 // TODO: Include packages needed for this application
 // ran npm init and npm i inquirer@8.2.4
 const inquirer = require("inquirer");
+const fs = require('fs'); 
+const generateMarkdown = require('generateMarkdown');
 
 
 // TODO: Create an array of questions for user input
@@ -42,8 +44,15 @@ const questions = [
     },
     {
         type: "list", 
-        message: "What type of license do you need? If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/)",
+        message: "What type of license do you need for this project? If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/)",
         name: "license",
+        choices: [
+            'MIT', 
+            'Apache', 
+            'Eclipse',
+            'BSD',
+            'GNU',
+        ]
 
     },
 ];
