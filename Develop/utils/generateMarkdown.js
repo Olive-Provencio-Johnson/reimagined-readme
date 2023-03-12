@@ -20,7 +20,7 @@ function renderLicenseBadge(license) {
     licenseBadge = "[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)]";
     licenseLink = "https://opensource.org/licenses/EPL-1.0";
   }
-  return (licenseBadge, licenseLink);
+  return {licenseBadge, licenseLink};
 }
 
 
