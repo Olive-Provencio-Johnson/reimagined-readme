@@ -37,27 +37,27 @@ function renderLicenseSection(license) {
 function generateMarkdown(response) {
   return `
   
-  # ${data.title}
+  # ${response.title}
 
-  ${data.description}
+  ${response.description}
 ---
   ## About
-  ${data.about}
+  ${response.about}
 
   ---
   ## Installation
-  ${data.installation}
+  ${response.installation}
   ---
   ## Usage
-  ${data.usage}
+  ${response.usage}
 
-  [The deployed application can be viewed here](${data.URL})
+  [The deployed application can be viewed here](${response.URL})
 ---
 ## Credits
-  ${data.credits}
+  ${response.credits}
   ---
 ## License
-  ${renderLicenseSection(data.license)}
+  ${renderLicenseSection(response.license)}
 
 `;
 }
