@@ -37,6 +37,11 @@ const questions = [
   },
   {
     type: "input",
+    message: "Provide the link to your deplpoyed application",
+    name: "URL",
+  },
+  {
+    type: "input",
     message:
       "List your collaborators, if any, with links to their GitHub profiles.",
     name: "credits",
