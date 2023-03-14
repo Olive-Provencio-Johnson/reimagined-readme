@@ -48,9 +48,9 @@ const questions = [
     name: "license",
     choices: [
       "Apache 2.0 License",
-      "GNU GPLv3",
+      "GNU GPLv3 License",
       "BSD 3-Clause License",
-      "MIT",
+      "MIT License",
       "Eclipse Public License 1.0",
     ],
   },
