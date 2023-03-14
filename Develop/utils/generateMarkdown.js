@@ -44,7 +44,7 @@ function generateMarkdown(response) {
   ## Usage
   ${response.usage}
 
-  [The deployed application can be viewed here](${response.URL})
+  [The deployed application can be viewed here](https://${response.URL})
 ---
 ## Credits
   ${response.credits}
