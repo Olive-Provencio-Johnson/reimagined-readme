@@ -30,25 +30,34 @@ function renderLicenseSection(license) {
 function generateMarkdown(response) {
   return `
   
-  # ${response.title}
+  # Title: ${response.title}
 
+  ## Description
   ${response.description}
----
+
+  ## Table of Contents: 
+  - [Description](#description) 
+  - [Installation](#installation)
+  - [Usage](#usage) 
+  - [Credits](#credits) 
+  - [License](#license) ${renderLicenseSection(response.license)}
+  
+
   ## About
   ${response.about}
 
-  ---
+
   ## Installation
   ${response.installation}
-  ---
+
   ## Usage
   ${response.usage}
 
   [The deployed application can be viewed here](https://${response.URL})
----
+
 ## Credits
   ${response.credits}
-  ---
+
 ## License
   ${renderLicenseSection(response.license)}
 
